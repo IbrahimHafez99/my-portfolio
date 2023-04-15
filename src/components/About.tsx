@@ -6,10 +6,10 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <div className="min-h-screen text-center">
-      <h3 className="relative pt-[90px] mb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="relative py-[90px] mb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      <div className="flex flex-col relative mx-auto md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center">
+      <div className="flex flex-col relative mx-auto md:text-left md:flex-row max-w-7xl px-10 justify-center items-center">
         <motion.img
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
