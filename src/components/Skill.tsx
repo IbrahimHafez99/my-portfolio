@@ -12,8 +12,9 @@ const Skill = ({ directionLeft }: Props) => {
           x: directionLeft ? -200 : 200,
           opacity: 0,
         }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 100, x: 0 }}
         src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012015/amazon-logo-rgb.png?itok=FZJ5-sKg"
         className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duartion-300 ease-in-out"
       />

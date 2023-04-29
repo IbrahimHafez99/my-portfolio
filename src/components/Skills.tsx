@@ -8,8 +8,9 @@ const Skills = (props: Props) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className="min-h-screen relative text-center max-w-[2000px] xl:px-10 xl:space-y-0 mx-auto"
+      
+      transition={{ duration: 0.75 }}
+      className="min-h-screen relative text-center max-w-[2000px] xl:px-10 xl:space-y-0 mx-auto overflow-hidden"
     >
       <h3 className="top-0 uppercase tracking-[20px] text-gray-500 text-2xl pt-[90px]">
         Skills
