@@ -6,9 +6,10 @@ import Head from "next/head";
 import Skills from "@/src/components/Skills";
 import Projects from "@/src/components/Projects";
 import ContactMe from "@/src/components/ContactMe";
+
 export default function Home() {
   return (
-    <div className="snap-mandatory snap-y overflow-auto bg-[rgb(36,36,36)] text-white h-screen">
+    <div className="snap-mandatory snap-y overflow-auto bg-[rgb(36,36,36)] text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
         <title>Ibrahim Dev</title>
       </Head>

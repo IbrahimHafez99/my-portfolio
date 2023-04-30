@@ -14,7 +14,7 @@ const Experience = (props: Props) => {
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl py-[90px]">
         Experience
       </h3>
-      <div className="flex w-full p-10  space-x-5 overflow-x-scroll snap-x snap-mandatory">
+      <div className="flex w-full p-10  space-x-5 overflow-x-scroll snap-x snap-mandatory  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
