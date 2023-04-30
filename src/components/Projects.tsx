@@ -11,7 +11,7 @@ const Projects = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex flex-col overflow-hidden max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="top-24 tracking-[20px] text-gray-500 text-2xl pt-[90px]">
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
@@ -25,8 +25,9 @@ const Projects = (props: Props) => {
               transition={{ duration: 0.75 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src="https://placehold.co/600x400"
+              src="https://images.unsplash.com/photo-1682131502504-6c0f96a5f157?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt="project"
+              className="relative z-20"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl md:text-4xl font-semibold">

@@ -5,6 +5,7 @@ import Experience from "@/src/components/Experience";
 import Head from "next/head";
 import Skills from "@/src/components/Skills";
 import Projects from "@/src/components/Projects";
+import ContactMe from "@/src/components/ContactMe";
 export default function Home() {
   return (
     <div className="snap-mandatory snap-y overflow-auto bg-[rgb(36,36,36)] text-white h-screen">
@@ -20,7 +21,7 @@ export default function Home() {
       <section id="about" className="snap-start">
         <About />
       </section>
-      <section id="experience" className="snap-start">
+      <section id="experience" className="snap-center">
         <Experience />
       </section>
       <section id="skills" className="snap-start">
@@ -28,6 +29,9 @@ export default function Home() {
       </section>
       <section id="projects" className="snap-start">
         <Projects />
+      </section>
+      <section id="contact" className="snap-start">
+        <ContactMe />
       </section>
     </div>
   );
