@@ -1,6 +1,8 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 type Props = {};
 
 const Header = (props: Props) => {
@@ -49,32 +51,36 @@ const Header = (props: Props) => {
           bgColor="transparent"
         />
       </motion.div>
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 0.7,
-        }}
-        className="flex items-center"
-      >
-        <SocialIcon
-          network="email"
-          url="ibrahim.hafez99@Hotmail.com"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="uppercase cursor-pointer hidden md:inline-flex text-sm text-gray-400">
-          Get in touch
-        </p>
-      </motion.div>
+      <Link href="#contact">
+        <motion.div
+          initial={{
+            x: 500,
+            opacity: 0,
+            scale: 0,
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 0.7,
+          }}
+          className="flex items-center space-x-2"
+        >
+          <EnvelopeIcon
+            // network="email"
+            // // url="ibrahim.hafez99@Hotmail.com"
+            // fgColor="gray"
+            // bgColor="transparent"
+            className="text-gray-500 w-9"
+          />
+
+          <p className="uppercase cursor-pointer hidden md:inline-flex text-sm text-gray-400">
+            Get in touch
+          </p>
+        </motion.div>
+      </Link>
     </header>
   );
 };

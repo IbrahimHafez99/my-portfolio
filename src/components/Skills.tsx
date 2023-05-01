@@ -28,14 +28,6 @@ const Skills = (props: Props) => {
           <Skill directionLeft={false} />
           <Skill directionLeft={true} />
           <Skill directionLeft={false} />
-          <Skill directionLeft={true} />
-          <Skill directionLeft={false} />
-          <Skill directionLeft={true} />
-          <Skill directionLeft={false} />
-          <Skill directionLeft={true} />
-          <Skill directionLeft={false} />
-          <Skill directionLeft={true} />
-          <Skill directionLeft={false} />
         </div>
       </div>
     </motion.div>
